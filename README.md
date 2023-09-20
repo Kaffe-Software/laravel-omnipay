@@ -31,7 +31,7 @@ Alternatively you can include every gateway by the following:
 You can publish the configuration files using the `vendor:publish` command.
 
 ```
-php artisan vendor:publish --provider="Ignited\LaravelOmnipay\LaravelOmnipayServiceProvider" --tag=config
+php artisan vendor:publish --provider="KaffeSoftware\LaravelOmnipay\LaravelOmnipayServiceProvider" --tag=config
 ```
 
 Once you have published the configuration files, you can add your gateway options to the config file in `config/laravel-omnipay.php`.
@@ -109,7 +109,7 @@ $gateway = Omnipay::gateway('paypal');
 
 For `Lumen` add the following in your bootstrap/app.php
 ```php
-$app->register(Ignited\LaravelOmnipay\LumenOmnipayServiceProvider::class);
+$app->register(KaffeSoftware\LaravelOmnipay\LumenOmnipayServiceProvider::class);
 ```
 
 Copy the laravel-omnipay.php file from the config directory to config/laravel-omnipay.php

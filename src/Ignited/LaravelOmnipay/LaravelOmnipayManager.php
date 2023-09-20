@@ -1,4 +1,4 @@
-<?php namespace Ignited\LaravelOmnipay;
+<?php namespace KaffeSoftware\LaravelOmnipay;
 
 use Closure;
 use Omnipay\Common\GatewayFactory;

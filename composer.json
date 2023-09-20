@@ -1,5 +1,5 @@
 {
-    "name": "ignited/laravel-omnipay",
+    "name": "kaffe-software/laravel-omnipay",
     "description": "Integrates Omnipay with Laravel and provides an easy configuration.",
     "keywords": ["omnipay", "payments", "laravel"],
     "license": "MIT",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Ignited\\LaravelOmnipay": "src/"
+            "KaffeSoftware\\LaravelOmnipay": "src/"
         }
     },
     "extra": {
@@ -25,10 +25,10 @@
         },
         "laravel": {
             "providers": [
-                "Ignited\\LaravelOmnipay\\LaravelOmnipayServiceProvider"
+                "KaffeSoftware\\LaravelOmnipay\\LaravelOmnipayServiceProvider"
             ],
             "aliases": {
-                "Omnipay": "Ignited\\LaravelOmnipay\\Facades\\OmnipayFacade"
+                "Omnipay": "KaffeSoftware\\LaravelOmnipay\\Facades\\OmnipayFacade"
             }
         }
     },

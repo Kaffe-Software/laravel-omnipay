@@ -1,4 +1,4 @@
-<?php namespace Ignited\LaravelOmnipay;
+<?php namespace KaffeSoftware\LaravelOmnipay;
 
 class LaravelOmnipayServiceProvider extends BaseServiceProvider {
 
