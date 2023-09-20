@@ -39,6 +39,13 @@ class LaravelOmnipayManager {
     protected $gateways = [];
 
     /**
+     * The array of resolved queue connections.
+     *
+     * @var array
+     */
+    protected $customConfig = [];
+
+    /**
      * Create a new omnipay manager instance.
      *
      * @param  \Illuminate\Foundation\Application $app
@@ -104,9 +111,14 @@ class LaravelOmnipayManager {
         return $this->app['config']['laravel-omnipay.default'];
     }
 
-    protected function getConfig($name)
+    protected function getConfig($name = null)
     {
-        return $this->app['config']["laravel-omnipay.gateways.{$name}"];
+        return $this->customConfig ?? $this->app['config']["laravel-omnipay.gateways.{$name}"];
+    }
+
+    protected function setConfig($config)
+    {
+        $this->customConfig = $config;
     }
 
     public function getGateway()
